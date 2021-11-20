@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Paperuc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript">
+			function download(){
+				var url_key = "original_url";
+				var original_url = document.getElementById(url_key).value;
+				var download_url = original_url.replace("Reader","GetSourcePDF");
+				window.location.href=download_url;
+			}
+		
+		</script>
+	</head>
+	<body>
+	    <div>
+			<input id="original_url" type="input"/>
+			<input id="download_button" type="button" onclick="download()" value="download"/>
+		</div>
+	</body>
+</html>
